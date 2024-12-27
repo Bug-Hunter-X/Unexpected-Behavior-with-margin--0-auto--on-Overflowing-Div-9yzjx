@@ -1,0 +1,10 @@
+The following CSS rule causes unexpected behavior in certain browsers:
+
+```css
+div {
+  margin: 0 auto;
+  width: 50%;
+}
+```
+
+This code intends to center a div horizontally. However, if the div's content overflows its width (meaning the content is wider than 50%), the `margin: 0 auto;` will not work as expected.  The div might not center correctly. This is due to how `margin: 0 auto` works: it requires the element to have a defined width.
