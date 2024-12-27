@@ -1,0 +1,37 @@
+Several solutions exist to center a div horizontally, even if its content overflows:
+
+**1. Using Flexbox:**
+
+```css
+div {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+```
+
+This is generally the preferred and most robust solution.
+
+**2. Using Grid Layout:**
+
+```css
+div {
+  display: grid;
+  place-items: center;
+  width: 50%;
+}
+```
+
+Grid layout offers similar centering capabilities.
+
+**3. Using `text-align: center;` (for inline elements):**
+
+If the div is an inline element or contains only inline elements, you can center its content using:
+
+```css
+div {
+  text-align: center;
+}
+```
+
+Remember to choose the method that best suits your layout and overall design.
